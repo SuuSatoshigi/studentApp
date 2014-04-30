@@ -1,0 +1,27 @@
+p#notice = notice
+
+p
+  strong Class name:
+  = @course.class_name
+p
+  strong Day of week:
+  = @course.day_of_week
+p
+  strong End week:
+  = @course.end_week
+p
+  strong Location:
+  = @course.location
+p
+  strong Section:
+  = @course.section
+p
+  strong Start week:
+  = @course.start_week
+p
+  strong Teacher:
+  = @course.teacher
+
+= link_to 'Edit', edit_course_path(@course)
+'|
+= link_to 'Back', courses_path

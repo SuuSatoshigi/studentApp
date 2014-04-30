@@ -1,0 +1,63 @@
+.container
+  h1.title student app 
+.container-fluid
+  .row-fluid
+    .span12
+      ul.nav.nav-tabs
+        li
+          a href="/courses"  Index
+        li.active
+          a href="/stud_courses"  Course
+        li
+          a href="/about_us"  About us
+        li.disabled
+          a href="/students"  Sign in
+.container-fluid
+  .row-fluid
+    .span12
+      .page-header
+        h1
+          | Student
+          small course
+      .pagination
+        ul
+          li
+            a href="#"  Monday
+          li
+            a href="#"  Tuesday
+          li
+            a href="#"  Wednesday
+          li
+            a href="#"  Thursday
+          li
+            a href="#"  Firday
+      table.table
+        thead
+          tr
+            th
+              | Course name
+            th
+              | Location
+            th
+              | Time
+            th
+              | Teacher
+        tbody
+          - @courses.each do |course|
+            tr
+              td
+                = course.class_name
+              td
+                = course.day_of_week
+              td
+                = course.end_week
+              td
+                = course.location
+              td
+                = course.section
+              td
+                = course.start_week
+              td
+                = course.teacher
+      
+

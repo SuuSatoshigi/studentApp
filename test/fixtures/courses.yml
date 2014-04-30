@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  class_name: MyString
+  day_of_week: MyString
+  end_week: 2014-04-30
+  location: MyString
+  section: MyString
+  start_week: 2014-04-30
+  teacher: MyString
+
+two:
+  class_name: MyString
+  day_of_week: MyString
+  end_week: 2014-04-30
+  location: MyString
+  section: MyString
+  start_week: 2014-04-30
+  teacher: MyString
