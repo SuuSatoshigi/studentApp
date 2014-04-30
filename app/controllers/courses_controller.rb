@@ -4,26 +4,17 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
-    @today = Time.now.strftime('%a')
-    @courses = Course.where( :day_of_week => @today)#:student_id => current_student.id,
-    # @courses = get_day_course(pre_courses)
-    #   tbody
-    #       tr
-    #         td
-    #           = @courses[@today].location
-    #         td
-    #           = @courses['Wed'].location
-    #         td
-    #            = @courses['Wed'].location
-    #         td
-    #            = @courses['Wed'].teacher
-
-
+    @today = Time.now.strftime('%A')
+    @courses = Course.where( :day_of_week => @today)
+    #:student_id => current_student.id,
   end
 
-  # GET /courses/1
-  # GET /courses/1.json
-  def show
+  def Mon
+    @c= Course.where( :day_of_week => 'Monday')
+  end
+
+  def Tues
+    @co = Course.where( :day_of_week => 'Tuesday')
   end
 
   # GET /courses/new

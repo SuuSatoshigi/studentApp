@@ -22,9 +22,9 @@
       .pagination
         ul
           li
-            a href="/courses/Mon"  Monday
-          li
-            a href="/courses/Tues"  Tuesday
+            a href="/Mon"  Monday
+          li.active
+            a href="/Tues"  Tuesday
           li
             a href="#"  Wednesday
           li
@@ -43,7 +43,7 @@
             th
               | Teacher
         tbody
-          - @courses.each do |course|
+          - @co.each do |course|
             tr
               td
                 = course.class_name

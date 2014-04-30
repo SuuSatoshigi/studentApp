@@ -1,0 +1,62 @@
+- content_for :head do
+  = stylesheet_link_tag "about_us/index"
+.container
+  h1.title student app 
+.container-fluid
+  .row-fluid
+    .span12
+      ul.nav.nav-tabs
+        li
+          a href="/stud_courses"  Index
+        li
+          a href="/courses"  Course
+        li.active
+          a href="/about_us"  About us
+        li.disabled
+          a href="/students"  Sign in
+
+.container-fluid
+  .row-fluid
+    .span12
+      .page-header
+        h1
+          | Suusatoshigi
+          small a girl com from China.
+      p
+        em> Git
+        | 是一个分布式的版本控制系统，最初由
+        strong> Linus Torvalds
+        | 编写，用作Linux内核代码的管理。在推出后，Git在其它项目中也取得了很大成功，尤其是在Ruby社区中。
+      dl
+        dt
+          | Rolex
+        dd
+          | 劳力士创始人为汉斯.威尔斯多夫，1908年他在瑞士将劳力士注册为商标。
+        dt
+          | Vacheron Constantin
+        dd
+          | 始创于1775年的江诗丹顿已有250年历史，
+        dd
+          | 是世界上历史最悠久、延续时间最长的名表之一。
+        dt
+          | IWC
+        dd
+          | 创立于1868年的万国表有“机械表专家”之称。
+        dt
+          | Cartier
+        dd
+          | 卡地亚拥有150多年历史，是法国珠宝金银首饰的制造名家。
+      a#modal-96654.btn data-toggle="modal" href="#modal-container-96654" role="button"  触发遮罩窗体
+      #modal-container-96654.modal.hide.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" 
+        .modal-header
+          button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
+          h3#myModalLabel
+            | 标题栏
+        .modal-body
+          p
+            | 显示信息
+        .modal-footer
+          button.btn aria-hidden="true" data-dismiss="modal"  关闭
+          button.btn.btn-primary 保存设置
+
+
